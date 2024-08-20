@@ -1,0 +1,25 @@
+[
+  {
+    "db_id": "company_employee",
+    "input_sequence": "show the headquarters that have both companies in banking industry and companies in oil and gas industry. | company : company.industry ( Banking , Oil and gas ) , company.headquarters , company.name , company.company_id , company.sales_in_billion , company.* | people : people.age , people.name , people.nationality , people.people_id , people.graduation_college , people.* | employment : employment.company_id , employment.people_id , employment.year_working , employment.*",
+    "output_sequence": " | ",
+    "tc_original": [
+      "company.industry",
+      "company.headquarters",
+      "company.name",
+      "company.company_id",
+      "company.sales_in_billion",
+      "company.*",
+      "people.age",
+      "people.name",
+      "people.nationality",
+      "people.people_id",
+      "people.graduation_college",
+      "people.*",
+      "employment.company_id",
+      "employment.people_id",
+      "employment.year_working",
+      "employment.*"
+    ]
+  }
+]

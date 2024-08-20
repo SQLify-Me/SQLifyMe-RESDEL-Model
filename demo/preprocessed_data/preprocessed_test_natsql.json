@@ -1,0 +1,174 @@
+[
+  {
+    "question": "show the headquarters that have both companies in banking industry and companies in oil and gas industry.",
+    "db_id": "company_employee",
+    "sql": "",
+    "norm_sql": "",
+    "sql_skeleton": "",
+    "natsql": "",
+    "norm_natsql": "",
+    "natsql_skeleton": "",
+    "db_schema": [
+      {
+        "table_name_original": "people",
+        "table_name": "people",
+        "column_names": [
+          "people id",
+          "age",
+          "name",
+          "nationality",
+          "graduation college"
+        ],
+        "column_names_original": [
+          "people_id",
+          "age",
+          "name",
+          "nationality",
+          "graduation_college"
+        ],
+        "column_types": [
+          "number",
+          "number",
+          "text",
+          "text",
+          "text"
+        ],
+        "db_contents": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "table_name_original": "company",
+        "table_name": "company",
+        "column_names": [
+          "company id",
+          "name",
+          "headquarters",
+          "industry",
+          "sales in billion",
+          "profits in billion",
+          "assets in billion",
+          "market value in billion"
+        ],
+        "column_names_original": [
+          "company_id",
+          "name",
+          "headquarters",
+          "industry",
+          "sales_in_billion",
+          "profits_in_billion",
+          "assets_in_billion",
+          "market_value_in_billion"
+        ],
+        "column_types": [
+          "number",
+          "text",
+          "text",
+          "text",
+          "number",
+          "number",
+          "number",
+          "number"
+        ],
+        "db_contents": [
+          [],
+          [],
+          [],
+          [
+            "Banking",
+            "Oil and gas"
+          ],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      {
+        "table_name_original": "employment",
+        "table_name": "employment",
+        "column_names": [
+          "company id",
+          "people id",
+          "year working"
+        ],
+        "column_names_original": [
+          "company_id",
+          "people_id",
+          "year_working"
+        ],
+        "column_types": [
+          "number",
+          "number",
+          "number"
+        ],
+        "db_contents": [
+          [],
+          [],
+          []
+        ]
+      }
+    ],
+    "pk": [
+      {
+        "table_name_original": "people",
+        "column_name_original": "people_id"
+      },
+      {
+        "table_name_original": "company",
+        "column_name_original": "company_id"
+      },
+      {
+        "table_name_original": "employment",
+        "column_name_original": "company_id"
+      }
+    ],
+    "fk": [
+      {
+        "source_table_name_original": "employment",
+        "source_column_name_original": "people_id",
+        "target_table_name_original": "people",
+        "target_column_name_original": "people_id"
+      },
+      {
+        "source_table_name_original": "employment",
+        "source_column_name_original": "company_id",
+        "target_table_name_original": "company",
+        "target_column_name_original": "company_id"
+      }
+    ],
+    "table_labels": [
+      0,
+      0,
+      0
+    ],
+    "column_labels": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+]
